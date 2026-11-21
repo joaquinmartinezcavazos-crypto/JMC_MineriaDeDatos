@@ -1,0 +1,48 @@
+Identificación de entidades
+
+===========================================================================
+
+id (Identificador Numerico): Identificador único de la serie
+
+name (Texto): Nombre de la serie
+
+original_name (Texto): Nombre original de la serie
+
+overview (Texto): Descripción o sinopsis
+
+first_air_date (Fecha): Fecha de primera emisión
+
+popularity (Numerico): Índice de popularidad
+
+vote_average (Numerico): Promedio de calificaciones
+
+vote_count (Numerico): Cantidad de calificaciones recibidos
+
+adult (Booleano): Es el contenido adulto?
+
+original_language (Texto Categorico): Idioma original
+
+origin_country (Texto Categorico): País de origen
+
+genre_ids (Texto Categorico): Identificadores de los géneros
+
+poster_path (URL Texto): Ruta de la imagen del póster
+
+backdrop_path (URL Texto): Ruta de la imagen de fondo
+
+===========================================================================
+
+Relaciones de Entidades:
+
+===========================================================================
+Relacion Serie_Genero (Muchos a muchos):
+genre_id: identificador del género.
+genre_name: nombre del género.
+Una serie puede tener varios géneros y un género puede estar presente en muchas series.
+
+Relacion Serie_Pais (Muchos a muchos):
+country_code: código del país.
+country_name: nombre del país.
+Una serie puede estar asociada con varios países y un país puede producir muchas series.
+
+
